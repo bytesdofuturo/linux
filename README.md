@@ -31,6 +31,12 @@ k - do not overwrite
 T - files from file
 v - verbose
 
+### SSH (Secure Shell)
+
+ssh user@host # Connect to host as user
+ssh -p port user@host # Connect using a specific port ssh-keygen -t rsa # Generate rsa key pair
+ssh-copy-id user@host # Copy your key to the remote server for password-less login
+
 ### NETWORKING
 
 ping host - ping host
@@ -45,6 +51,10 @@ chmod octal file - change permissions of file
 1 - execute (x)
 order: owner/group/world chmod 777 - rwx for everyone
 chmod 755 - w for owner, x for group world
+
+### SEARCHING
+grep pattern files # Search for pattern in files grep
+-r pattern dir # Recursively search for pattern in dir find /dir -name name* # Find files starting with name in dir locate file_name # Find files by name (uses a database)
 
 ### PROCESSES
 ps - display currently active processes ps aux - detailed outputs
